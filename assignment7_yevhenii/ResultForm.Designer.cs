@@ -31,6 +31,8 @@
             this.progress_result = new System.Windows.Forms.ProgressBar();
             this.label1 = new System.Windows.Forms.Label();
             this.label_result = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label_status = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // progress_result
@@ -60,11 +62,33 @@
             this.label_result.TabIndex = 2;
             this.label_result.Text = "result";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.6F);
+            this.label2.Location = new System.Drawing.Point(185, 252);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(92, 29);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Status:";
+            // 
+            // label_status
+            // 
+            this.label_status.AutoSize = true;
+            this.label_status.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.6F);
+            this.label_status.Location = new System.Drawing.Point(294, 252);
+            this.label_status.Name = "label_status";
+            this.label_status.Size = new System.Drawing.Size(81, 29);
+            this.label_status.TabIndex = 4;
+            this.label_status.Text = "label3";
+            // 
             // ResultForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(603, 305);
+            this.Controls.Add(this.label_status);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label_result);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.progress_result);
@@ -80,5 +104,7 @@
         private System.Windows.Forms.ProgressBar progress_result;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label_result;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label_status;
     }
 }

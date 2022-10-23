@@ -17,6 +17,13 @@ namespace assignment7_yevhenii
             InitializeComponent();
             this.progress_result.Value = (int) result;
             this.label_result.Text = result.ToString() + " %";
+            if (result > 75)
+            {
+                this.label_status.Text = "PASSED";
+;           } else
+            {
+                this.label_status.Text = "FAILED";
+            }
         }
     }
 }
